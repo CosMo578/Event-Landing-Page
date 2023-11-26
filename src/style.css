@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: Arima, 'Courier New', Courier, monospace;
+}
+
+html {
+  /* font-size: 16px; */
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+body {
+  color: #fff;
+  background: #051f2e;
+  overflow: hidden;
+}
+
+header {
+  background: hsla(202, 86%, 6%, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+section {
+  /* background-image: url(/assets/AdobeStock_289726988_Preview.ai);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.875rem;
+}
+
+.for-mobile {
+  display: none;
+}
+
+.child-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+}
+
+.child-1 p {
+  margin-bottom: 15px;
+}
+
+.child-1 h1 {
+  font-size: clamp(30px, 4vw, 50px);
+  font-weight: 900;
+}
+
+.child-2 {
+  width: 50%;
+  height: 80%;
+}
+
+.child-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.colored {
+  color: rgb(223, 89, 0);
+}
+
+.time {
+  margin: 10px 0;
+}
+
+.time span {
+  display: inline-block;
+  font-size: clamp(18px, 3vw, 24px);
+  margin: 0 0.5rem;
+}
+
+button {
+  font-size: 3w;
+  color: inherit;
+  background: transparent;
+  padding: 1rem 1.5rem;
+  border: 2px solid #fff;
+}
+
+button:hover {
+  font-weight: 600;
+  background: rgba(196, 196, 196, 0.2);
+  color: rgb(223, 89, 0);
+  border: 2px solid rgb(223, 89, 0);
+}
+
+marquee {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+@media screen and (width <= 600px) {
+  header,
+  .for-desktop {
+    display: none;
+  }
+  .for-mobile {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .for-mobile h1 {
+    margin-bottom: 1.25rem;
+  }
+}
